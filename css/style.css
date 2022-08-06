@@ -1,0 +1,116 @@
+/* 
+===============
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --blue: hsl(205, 78%, 60%);
+  --white: #fff;
+  --font: "Open Sans", sans-serif;
+  --black: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav bar Styling */
+body {
+  font-family: var(--ff-primary);
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+a:hover{
+  color: var(--blue);
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--white); 
+  margin: 0 0 16rem 0;
+  box-shadow: var(--black);
+  padding: 0.7rem;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+h3 {
+  color: var(--blue);
+}
+span{
+  color: rgb(47, 47, 204);
+}
+div.main{
+ 
+  display: grid;
+  place-items: center;
+}
+h2{
+background-color: rgb(22, 21, 21);
+color: var(--white);
+padding: 1rem;
+font-size: 2rem;
+border-radius: 5px;
+margin-bottom: 30px;
+}
+button{
+  padding: 0.7rem;
+  width: 8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-weight: bold;
+ border: 2px solid black;
+
+}
+button:hover{
+ background-color:rgb(22, 21, 21) ;
+ color: white;
+}
+
+@media(min-width:350px) and (max-width: 450px){
+span{
+margin-left: 6rem;
+
+}
+.nav-bar{
+  justify-content: space-between;
+  margin: 0 0 15rem 0;
+}
+ul{
+  margin-right: 10px;
+}
+
+}
